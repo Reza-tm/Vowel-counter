@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="dist/tailwind.css" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body class="bg-blue-200 flex justify-center font-semibold">
+		<div
+			id="appContaier"
+			class="
+				rounded-xl
+				bg-blue-500
+				w-[300px]
+				h-[300px]
+				mt-16
+				flex flex-col
+				justify-evenly
+				text-center
+			"
+		>
+			<p>Hi i am Vowel Counter</p>
+			<p>
+				Give me a sentence and <br />
+				i will count vowels in sentence
+			</p>
+			<div class="w-full">
+				<input
+					id="input"
+					spellcheck="false"
+					type="text"
+					class="text-center w-6/12 px-4 outline-none"
+				/>
+			</div>
+			<div class="w-full mx-auto">
+				<button
+					class="font-semibold py-1 px-4 bg-green-400"
+					onclick="vowelsFinder()"
+				>
+					Check
+				</button>
+			</div>
+
+			<p id="result">Vowels number :</p>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
